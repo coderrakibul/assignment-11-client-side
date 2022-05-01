@@ -1,3 +1,9 @@
 .banner-img img{
     height:calc(100vh - 65px);
 }
+
+@media only screen and (max-width:576px){
+    .banner-img img{
+        height:calc(350px);
+    }
+}
