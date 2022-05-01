@@ -5,9 +5,13 @@ import './Home.css'
 const Home = () => {
 
     return (
-        <div className='w-100 banner-img'>
+
+       <div>
+            <div className='w-100 banner-img'>
             <img className='img-fluid' src={banner} alt="" />
         </div>
+       </div>
+
     );
 };
 
