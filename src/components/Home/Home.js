@@ -8,7 +8,7 @@ const Home = () => {
     console.log(products);
 
     useEffect(() => {
-        fetch("products.json")
+        fetch("http://localhost:5000/product")
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [])
@@ -26,7 +26,7 @@ const Home = () => {
                 <div className='products-container'>
                     {
                         products.map(product => <Product
-                            key={product.id}
+                            key={product._id}
                             product={product}
                         ></Product>)
                     }
