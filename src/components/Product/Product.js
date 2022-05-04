@@ -3,7 +3,10 @@ import './Product.css'
 
 
 const Product = (props) => {
-    const { name, available, image } = props.product;
+    const { name, description, price, quantity, image, supplier } = props.product;
+
+    let productDesc = description;
+    let result = productDesc.slice(0, 100)
     return (
         <div className='product'>
 
@@ -11,7 +14,12 @@ const Product = (props) => {
                 <img className='w-100' src={image} alt="" />
 
                 <h3 className='mt-3'>{name}</h3>
-                <p>Available Products: {available}</p>
+                <p><small>{result}.... </small></p>
+                <h5>Price: ${price}</h5>
+                <h5>Available Products: {quantity} </h5>
+                <h6>Supplier: {supplier}</h6>
+                <button className='btn btn-primary py-1'>Manage</button>
+
             </div>
 
         </div>
