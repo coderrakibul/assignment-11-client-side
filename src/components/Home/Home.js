@@ -11,8 +11,10 @@ const Home = () => {
         fetch("http://localhost:5000/product")
             .then(res => res.json())
             .then(data => setProducts(data))
-    }, [])
+    }, []);
 
+    const allProduct = products;
+    const firstSix = allProduct.slice(0, 6);
 
     return (
 
@@ -25,7 +27,7 @@ const Home = () => {
                 <h2 className='text-center mb-4'>Products Items</h2>
                 <div className='products-container'>
                     {
-                        products.map(product => <Product
+                        firstSix.map(product => <Product
                             key={product._id}
                             product={product}
                         ></Product>)
