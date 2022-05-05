@@ -1,8 +1,16 @@
 import React from 'react';
+import Loading from '../Loading/Loading';
 import './SingleProduct.css'
 
 const SingleProduct = (props) => {
     const { name, description, price, quantity, image, supplier } = props.product;
+    let loading;
+
+    if (loading) {
+        if (loading) {
+            return <Loading></Loading>
+        }
+    };
     return (
         <div className='single-product'>
 
