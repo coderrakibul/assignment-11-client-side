@@ -5,7 +5,6 @@ import './Home.css'
 
 const Home = () => {
     const [products, setProducts] = useState([]);
-    console.log(products);
 
     useEffect(() => {
         fetch("http://localhost:5000/product")
@@ -34,6 +33,10 @@ const Home = () => {
                     }
                 </div>
 
+            </div>
+
+            <div className='text-center mb-5'>
+            <button className='btn btn-success'>See All Products</button>
             </div>
         </div>
 
