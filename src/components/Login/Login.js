@@ -37,7 +37,7 @@ const Login = () => {
     }
 
     if (user || googleUser) {
-        navigate('/checkout')
+        navigate('/allproduct')
     }
     return (
         <div className='form-container container d-block mt-5 mb-5 align-items-center'>
