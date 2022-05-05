@@ -12,6 +12,7 @@ const AllProducts = () => {
             .then(data => setProducts(data))
     }, []);
 
+
     return (
        
         <div className='container'>
