@@ -1,10 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './Product.css'
 
 
 const Product = (props) => {
-    const { name, description, price, quantity, image, supplier } = props.product;
+    const { _id, name, description, price, quantity, image, supplier } = props.product;
+    const navigate = useNavigate();
+
+    const navigateToProductDetails = id => {
+        navigate(`/inventory/${id}`);
+    };
 
     let productDesc = description;
     let result = productDesc.slice(0, 100)
@@ -19,7 +24,7 @@ const Product = (props) => {
                 <h5>Price: ${price}</h5>
                 <h5>Available Products: {quantity} </h5>
                 <h6>Supplier: {supplier}</h6>
-                <button className='btn btn-primary py-1'>Manage</button>
+                <button onClick={() => navigateToProductDetails(_id)} className='btn btn-primary py-1'>Manage</button>
 
             </div>
 

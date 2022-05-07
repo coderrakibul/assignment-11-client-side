@@ -6,6 +6,7 @@ import Blogs from './components/Blogs/Blogs';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header ';
 import Home from './components/Home/Home';
+import Inventory from './components/Inventory/Inventory';
 import Login from './components/Login/Login';
 import ManageItem from './components/ManageItem/ManageItem';
 import NotFound from './components/NotFound/NotFound';
@@ -19,8 +20,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
-        <Route path="/allproduct" element={<Require>
+        <Route path="/allproduct" element={
           <AllProduct></AllProduct>
+        }></Route>
+        <Route path="/inventory/:_id" element={<Require>
+          <Inventory></Inventory>
         </Require>}></Route>
         <Route path="additem" element={<AddItem></AddItem>}></Route>
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>
