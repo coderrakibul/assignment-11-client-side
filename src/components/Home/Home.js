@@ -24,7 +24,7 @@ const Home = () => {
             </div>
 
             <div className='container mt-5 mb-5'>
-                <h2 className='text-center mb-4'>Products Items</h2>
+                <h2 className='text-center mb-4'>Inventory</h2>
                 <div className='products-container'>
                     {
                         firstSix.map(product => <Product
@@ -36,8 +36,9 @@ const Home = () => {
 
             </div>
 
-            <div className='text-center mb-5'>
+            <div className='text-center mb-5 d-flex justify-content-between container'>
                 <Link to="/allproduct" className='btn btn-success'>View All Products</Link>
+                <Link to="/" className='btn btn-success'>Manage Inventories</Link>
             </div>
         </div>
 
