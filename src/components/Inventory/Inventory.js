@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 
 const Inventory = () => {
@@ -24,6 +24,7 @@ const Inventory = () => {
             <h3>Available: {product.quantity}</h3>
             <h3>Supplier: {product.supplier}</h3>
             <h5> <h3 className='d-inline-block'>Description:</h3> {product.description}</h5>
+           
         </div>
     );
 };

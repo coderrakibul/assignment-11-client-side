@@ -36,10 +36,11 @@ const Home = () => {
 
             </div>
 
-            <div className='text-center mb-5 d-flex justify-content-between container'>
-                <Link to="/allproduct" className='btn btn-success'>View All Products</Link>
-                <Link to="/" className='btn btn-success'>Manage Inventories</Link>
+
+            <div className='container'>
+                <Link to="/allproduct" className='btn btn-success mb-5 d-block fw-bold fs-5'>View All Products</Link>
             </div>
+
         </div>
 
     );

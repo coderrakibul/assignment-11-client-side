@@ -26,7 +26,7 @@ function App() {
         <Route path="/product/:productId" element={<Require>
           <Inventory></Inventory>
         </Require>}></Route>
-        <Route path="additem" element={<AddItem></AddItem>}></Route>
+        <Route path="additem" element={<Require><AddItem></AddItem></Require>}></Route>
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
