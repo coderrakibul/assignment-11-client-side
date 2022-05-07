@@ -13,13 +13,17 @@ const Inventory = () => {
             .then(res => res.json())
             .then(data => setProduct(data));
     }, [productId]);
-    console.log(product)
-    console.log(productId)
+
 
     return (
         <div className='container'>
-            <h2>This is inventory</h2>
-            <h2>Bike Name {product.name}</h2>
+            <h2 className='text-center mt-5'>About This Product</h2>
+            <img className='w-50 mx-auto d-block' src={product.image} alt="" />
+            <h3>{product.name}</h3>
+            <h3>{product.price}</h3>
+            <h3>{product.quantity}</h3>
+            <h3>{product.supplier}</h3>
+            <h5>{product.description}</h5>
         </div>
     );
 };
