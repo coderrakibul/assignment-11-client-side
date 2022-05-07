@@ -3,12 +3,12 @@ import { useNavigate } from 'react-router-dom';
 import './Product.css'
 
 
-const Product = (props) => {
-    const { _id, name, description, price, quantity, image, supplier } = props.product;
+const Product = ({ product }) => {
+    const { _id, name, description, price, quantity, image, supplier } = product;
     const navigate = useNavigate();
 
     const navigateToProductDetails = id => {
-        navigate(`/inventory/${id}`);
+        navigate(`/product/${id}`);
     };
 
     let productDesc = description;
