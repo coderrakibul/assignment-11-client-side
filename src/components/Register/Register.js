@@ -59,6 +59,14 @@ const Register = () => {
                     <p>Already have an accout? <Link className="text-decoration-none fw-bold ms-2" to='/login'>Login</Link> </p>
                 </div>
 
+                <div>
+                    <p>
+                        <Link className="btn btn-primary text-decoration-none fw-bold ms-2" to='/verify'>Please Verify Your Email</Link>
+                    </p>
+                </div>
+
+
+
                 <div className='d-flex justify-content-center'>
                     <Button onClick={() => createUserWithEmailAndPassword(email, password)} variant="primary" type="submit" className='me-2'>
                         Register

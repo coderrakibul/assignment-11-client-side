@@ -12,6 +12,7 @@ import ManageItem from './components/ManageItem/ManageItem';
 import NotFound from './components/NotFound/NotFound';
 import Register from './components/Register/Register';
 import Require from './components/Require/Require';
+import Verify from './components/Verify/Verify';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
+        <Route path="/verify" element={<Verify></Verify>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
