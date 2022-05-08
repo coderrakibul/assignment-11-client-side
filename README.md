@@ -1,10 +1,10 @@
 # Bike Corner
 
-Website LInk [Bike Corner](https://warehouse-84aea.web.app/).
+Website Link [Bike Corner](https://warehouse-84aea.web.app/).
 
 ## About This Project
 
-this is a website of bike dealer.
+This is a website of bike dealer.
 Many categories bikes stored here. we sell these over all country.
 
 ## Available Scripts
