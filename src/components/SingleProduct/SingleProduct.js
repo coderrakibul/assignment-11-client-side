@@ -1,9 +1,15 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Loading from '../Loading/Loading';
 import './SingleProduct.css'
 
 const SingleProduct = (props) => {
-    const { name, description, price, quantity, image, supplier } = props.product;
+    const { _id, name, description, price, quantity, image, supplier } = props.product;
+    const navigate = useNavigate();
+
+    const navigateToProductDetails = id => {
+        navigate(`/product/${id}`);
+    };
     let loading;
 
     if (loading) {
@@ -24,6 +30,7 @@ const SingleProduct = (props) => {
                 <h5>Price: ${price}</h5>
                 <h5>Available Products: {quantity} </h5>
                 <h6>Supplier: {supplier}</h6>
+                <button onClick={() => navigateToProductDetails(_id)} className='btn btn-primary py-1'>Manage</button>
 
             </div>
 
