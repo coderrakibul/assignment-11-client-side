@@ -1,14 +1,19 @@
-# Website Link
+# Bike Corner
 
-Bike Corner [Bike Corner](https://warehouse-84aea.web.app/).
+Website LInk [Bike Corner](https://warehouse-84aea.web.app/).
+
+## About This Project
+
+this is a website of bike dealer.
+Many categories bikes stored here. we sell these over all country.
 
 ## Available Scripts
 
-* Protected page for authorized users
-* delete product function added
-* Authentication system
-* Smartly handled website
-* Responsive design
+- Protected page for authorized users
+- delete product function added
+- Authentication system
+- Smartly handled website
+- Responsive design
 
 ### `npm start`
 
