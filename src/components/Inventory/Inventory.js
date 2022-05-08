@@ -1,10 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../firebase.init';
+import { Table } from 'react-bootstrap';
+import './Inventory.css'
 
 
 const Inventory = () => {
     const { productId } = useParams();
     const [product, setProduct] = useState({});
+    const [user] = useAuthState(auth);
 
     useEffect(() => {
         const url = `https://quiet-dawn-78359.herokuapp.com/product/${productId}`;
@@ -16,16 +21,35 @@ const Inventory = () => {
 
 
     return (
-        <div className='container mt-5 mb-5'>
-            <h2 className='text-center'>About This Product</h2>
-            <img className='w-50 mx-auto d-block' src={product.image} alt="" />
-            <h3>Name: {product.name}</h3>
-            <h3>Price: ${product.price}</h3>
-            <h3>Available: {product.quantity}</h3>
-            <h3>Supplier: {product.supplier}</h3>
-            <h5> <h3 className='d-inline-block'>Description:</h3> {product.description}</h5>
+       <div>
+           <div className='mt-3 mb-5 d-flex justify-content-center'>
+           <Link className='btn btn-primary' as={Link} to="/additem">Add New Product</Link>
+           </div>
 
-        </div>
+            <Table striped bordered hover>
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Product Name</th>
+                    <th>Email</th>
+                    <th>Available</th>
+                    <th>Price</th>
+                    <th>Supplier</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td className='img-width'><img className='w-50' src={product.image} alt="" /></td>
+                    <td className='name-width'>{product.name}</td>
+                    <td className='email-width'>{user.email}</td>
+                    <td className='quantity-width'>{product.quantity}</td>
+                    <td className='price-width'>${product.price}</td>
+                    <td className='supplier-width'>{product.supplier}</td>
+                </tr>
+
+            </tbody>
+        </Table>
+       </div>
     );
 };
 
