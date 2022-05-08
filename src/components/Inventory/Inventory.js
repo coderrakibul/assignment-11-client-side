@@ -7,7 +7,7 @@ const Inventory = () => {
     const [product, setProduct] = useState({});
 
     useEffect(() => {
-        const url = `http://localhost:5000/product/${productId}`;
+        const url = `https://quiet-dawn-78359.herokuapp.com/product/${productId}`;
         console.log(url);
         fetch(url)
             .then(res => res.json())
@@ -24,7 +24,7 @@ const Inventory = () => {
             <h3>Available: {product.quantity}</h3>
             <h3>Supplier: {product.supplier}</h3>
             <h5> <h3 className='d-inline-block'>Description:</h3> {product.description}</h5>
-           
+
         </div>
     );
 };

@@ -5,7 +5,7 @@ const AddItem = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         console.log(data);
-        const url = `http://localhost:5000/product`;
+        const url = `https://quiet-dawn-78359.herokuapp.com/product`;
         fetch(url, {
             method: 'POST',
             headers: {
@@ -13,10 +13,10 @@ const AddItem = () => {
             },
             body: JSON.stringify(data)
         })
-        .then(res => res.json)
-        .then(result =>{
-            console.log(result)
-        })
+            .then(res => res.json)
+            .then(result => {
+                console.log(result)
+            })
 
     };
 
