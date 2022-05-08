@@ -29,7 +29,7 @@ const Blogs = () => {
                 </p>
 
                 <p>
-                    <strong>MongoDB: </strong>
+                    <strong>MongoDB: </strong> MongoDB is a No SQL database system. MongoDB is a general purpose database used in various ways to support applications in many different industries. When we will work in large project and many developers work together then we can use MongoDB to build project easier.
                 </p>
             </div>
 
@@ -37,11 +37,11 @@ const Blogs = () => {
             <div className='mt-5'>
                 <h4>Question 3: Difference between SQL and no SQL.</h4>
                 <p>
-                    <strong>SQL: </strong>
+                    <strong>SQL: </strong> SQL stands for Structured Query Languag. SQL database are relational. it is a table based data system.
                 </p>
 
                 <p>
-                    <strong>No SQL: </strong>
+                    <strong>No SQL: </strong> No SQL database are non-relational. It is document based. It can store data like javascript object.
                 </p>
             </div>
 
@@ -50,15 +50,14 @@ const Blogs = () => {
                 <h4>Question 4: What is the purpose of jwt and how does it work?</h4>
 
                 <p>
-                    <strong>Purpose of JWT: </strong>
+                    <strong>Purpose of JWT: </strong> JWT is json web token. JWT is used for stateless authentication mechanisms for users and provider.  this means maintaining session is on the client-side instead of storing sessions on the server.
                 </p>
 
                 <p>
-                    <strong>How does it work: </strong>
+                    <strong>How does it work: </strong>JWTs are signed using a cryptographic algorithm to ensure that the claims cannot be altered after the token is issued.
                 </p>
 
             </div>
-
 
         </div>
     );
