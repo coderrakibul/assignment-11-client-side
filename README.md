@@ -1,10 +1,14 @@
-# Getting Started with Create React App
+# Website Link
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bike Corner [Bike Corner](https://warehouse-84aea.web.app/).
 
 ## Available Scripts
 
-In the project directory, you can run:
+* Protected page for authorized users
+* delete product function added
+* Authentication system
+* Smartly handled website
+* Responsive design
 
 ### `npm start`
 
