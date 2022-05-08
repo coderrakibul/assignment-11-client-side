@@ -2,12 +2,12 @@
 
 Website Link [Bike Corner](https://warehouse-84aea.web.app/).
 
-## About This Project
+## About This Website
 
 This is a website of bike dealer.
 Many categories bikes stored here. we sell these over all country.
 
-## Available Scripts
+## Website Feature
 
 - Protected page for authorized users
 - delete product function added
